@@ -1,9 +1,12 @@
 <template>
-  <div>Statistics.vue</div>
+  <div>
+    Statistics.vue
+    <Nav/>
+  </div>
 </template>
 
 <script lang="ts">
-export default {
-name: " Statistics"
-}
-</script>
+  export default {
+    name: ' Statistics'
+  };
+</script>;
