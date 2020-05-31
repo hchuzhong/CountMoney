@@ -76,6 +76,7 @@
       padding: 9px 16px;
       text-align: right;
       height: 72px;
+      background: white;
     }
 
     .buttons {
