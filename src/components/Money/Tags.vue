@@ -15,8 +15,10 @@
 <script lang="ts">
   import Vue from 'vue';
   import {Component, Prop} from 'vue-property-decorator';
-
-  @Component
+  import Button from '@/components/Button.vue';
+  @Component({
+    components: {Button}
+  })
   export default class Tags extends Vue {
     @Prop() readonly dataSource: string[] | undefined;
     selectedTags: string[] = [];
@@ -81,7 +83,7 @@
         border: none;
         color: #999;
         border-bottom: 1px solid;
-        padding: 0 3px;
+        padding: 0 4px;
       }
     }
   }
