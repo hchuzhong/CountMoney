@@ -57,6 +57,7 @@
 
     > .current {
       display: flex;
+      flex-wrap: wrap;
 
       > li {
         $bg: #d9d9d9;
@@ -67,6 +68,7 @@
         border-radius: $h/2;
         padding: 0 16px;
         margin-right: 12px;
+        margin-top: 10px;
 
         &.selected {
           background: darken($bg, 50%);
