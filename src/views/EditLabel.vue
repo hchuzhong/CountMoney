@@ -31,7 +31,7 @@
 
     created() {
       this.tag = window.findTag(this.$route.params.id);
-      if (! this.tag) {
+      if (!this.tag) {
         this.$router.replace('/404');
       }
     }
@@ -41,16 +41,18 @@
         window.updateTag(this.tag.id, name);
       }
     }
-    remove(){
-      if(this.tag){
-        if (window.removeTag(this.tag.id)){
+
+    remove() {
+      if (this.tag) {
+        if (window.removeTag(this.tag.id)) {
           this.$router.back();
-        } else{
+        } else {
           window.alert('删除失败');
         }
       }
     }
-    goBack(){
+
+    goBack() {
       this.$router.back();
     }
   }
