@@ -123,8 +123,8 @@
   .notes {
     margin-right: auto;
     margin-left: 16px;
-    overflow: scroll;
     color: #999;
+    overflow: hidden;
   }
 
   .noResult{
