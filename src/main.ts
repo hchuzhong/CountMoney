@@ -27,13 +27,12 @@ window.onload = function () {
 
 if (document.documentElement.clientWidth > 500) {
   window.alert('请使用手机打开本页面，以保证使用体验和浏览效果');
-  const img = document.createElement('img');
-  img.src = '/qrcode.png';
-  console.log(img.src);
-  img.style.position = 'fixed';
-  img.style.left = '50%';
-  img.style.top = '50%';
-  img.style.transform = 'translate(-50%, -50%)';
-  img.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.25)';
-  document.body.appendChild(img);
+  const image = document.createElement('img');
+  image.src = require('../public/code.png');
+  image.style.position = 'fixed';
+  image.style.left = '50%';
+  image.style.top = '50%';
+  image.style.transform = 'translate(-50%, -50%)';
+  image.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.25)';
+  document.body.appendChild(image);
 }
