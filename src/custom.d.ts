@@ -4,6 +4,7 @@ type RootState = {
   createTagError: Error | null;
   tagList: Tag[];
   currentTag?: Tag;
+  chooseTag: boolean;
 }
 
 type RecordItem = {

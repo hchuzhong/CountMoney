@@ -51,13 +51,15 @@
 
     saveRecord() {
       if (!this.record.tags || this.record.tags.length === 0) {
-        return window.alert('请选择至少一个标签');
+        window.alert('请选择至少一个标签');
+        this.$store.state.chooseTag = false;
       } else{
         this.$store.commit('createRecord', this.record);
         if (this.$store.state.createRecordError === null) {
           window.alert('已保存');
           this.record.notes = '';
         }
+        this.$store.state.chooseTag = true;
       }
     }
 

@@ -12,7 +12,8 @@ const store = new Vuex.Store({
     createRecordError: null,
     createTagError: null,
     tagList: [],
-    currentTag: undefined
+    currentTag: undefined,
+    chooseTag: false,
   } as RootState,
   mutations: {
     setCurrentTag(state, id: string) {

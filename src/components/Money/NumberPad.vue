@@ -57,10 +57,12 @@
     }
 
     ok() {
-      const number = parseFloat(this.output)
+      const number = parseFloat(this.output);
       this.$emit('update:value', number);
       this.$emit('submit', number);
-      this.output = '0';
+      if(this.$store.state.chooseTag){
+        this.output = '0';
+      }
     }
   }
 </script>
